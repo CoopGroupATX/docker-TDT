@@ -29,6 +29,8 @@ RUN apt-get update && \
     # remove apt cache from image
     apt-get clean all
 
+# add plugins
+COPY plugins /minecraft/plugins/
 
 # expose minecraft port
 EXPOSE 25565
